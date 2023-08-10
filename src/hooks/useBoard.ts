@@ -21,7 +21,11 @@ const useBoard = (r: number, c: number, initialVal: boolean) => {
     });
   }, []);
 
-  return { board, toggleCell };
+  const resetBoard = useCallback(() => {
+    setBoard(generateDefaultBoard(r, c, initialVal));
+  }, [r, c, initialVal]);
+
+  return { board, toggleCell, setBoard, resetBoard };
 };
 
 export default useBoard;
