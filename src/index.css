@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Roboto:ital@1&display=swap");
+
 #root {
   width: 100vw;
   height: 100vh;
@@ -8,24 +10,34 @@
 }
 
 .cell {
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
 }
 
 .live {
-  background-color: darkgrey;
+  border: 1px solid #07a0c3;
+  background-color: #086788;
 }
 
 .dead {
-  background-color: black;
+  border: 1px solid #07a0c3;
 }
 
 .buttons {
   display: flex;
   gap: 25px;
+  padding-bottom: 50px;
 }
 
 button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: #086788;
+  color: white;
+  border-radius: 10px;
   width: 100px;
-  height: 25px;
+  height: 30px;
+  box-shadow: 5px 5px lightgrey;
+  border: 2px solid #25c1e4;
 }
